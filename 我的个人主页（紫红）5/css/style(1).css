@@ -1,0 +1,280 @@
+@charset "utf-8";
+/* CSS Document */
+* {
+	margin: 0;
+	padding: 0;
+}
+ul{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+    color: #333;
+}
+a:hover{
+    color: #d943ab;
+}
+
+body {
+	font-family: "微软雅黑";
+	font-size: 14px;
+	color: #333;
+    line-height: 1.5;
+    background: #ffbbce;
+}
+.clearfix:after{
+    clear: both;
+    content: '.';
+    display: block;
+    height: 0;
+    visibility: hidden;
+}
+.wrap{
+	width: 1200px;
+    margin: 0 auto;
+    background: #fff;
+}
+.header{
+    position: relative;
+    width: 100%;
+    height: 50px;
+    background: #d943ab;
+    z-index: 10;
+}
+.header .logo{
+    position: absolute;
+    top: 0;
+    left: 25px;
+    height: 50px;
+    font-size: 22px;
+    line-height: 50px;
+    font-weight: normal;
+    color: #fff ;
+}
+.header .nav{
+    margin-left: 300px;
+}
+.header .nav_li{
+    float: left;
+    margin-right: 30px;
+    padding: 0 15px;
+    height: 50px;
+    line-height: 50px;
+}
+.header .nav_li a{
+    display: block;
+    font-size: 16px;
+    color: #fff;
+}
+.header .current a,
+.header .nav_li a:hover{
+    color: #f8fb16;
+}
+.banner{
+    font-size: 0;
+}
+
+.container{
+    background-color: #f2f5f8;
+}
+.side_bar{
+    float: left;
+    width: 290px;
+}
+.cont_bar{
+    float: right;
+    padding-top: 30px;
+    width: 910px;
+    background-color: #fff;
+}
+.side_bar_inner{
+    padding: 25px 40px;
+}
+.my_photo {
+    display: block;
+    margin: 30px auto 20px;
+    width: 200px;
+    height: 200px;
+    border-radius: 100%;
+    border: 5px solid #ffbbce;
+}
+h2{
+    font-weight: bold;
+    font-size: 20px;
+}
+.my_name{
+    text-align: center;
+}
+.side_bar_txt{
+    margin: 30px 0 0 10px;
+}
+.side_bar_txt p {
+    margin-top: 15px;
+    padding-left: 15px;
+    line-height: 24px;
+    background: url('../images/icon_dot.png') no-repeat 0 center;
+}
+.col_bar{
+    margin: 20px 17px;
+}
+.col_bar_hd{
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+}
+.col_bar_hd .title{
+    font-size: 20px;
+    color: #d943ab;
+    font-weight: bold;
+}
+.pic_bar .pic_ul{
+    margin: 10px 0;
+}
+.pic_bar .pic_li{
+    float: left;
+    margin: 11px;
+    width: 270px;
+    overflow: hidden;
+}
+.pic_bar .pic_img{
+    width: 100%;
+    border-radius: 5px;
+}
+.pic_bar .pic_title{
+    margin-bottom: 5px;
+    font-size: 16px;
+    text-align: center;
+}
+
+.intro_bar .col_bar_bd{
+    padding: 20px;
+}
+.intro_bar p{
+    margin-bottom: 10px;
+    text-indent: 2em;
+    line-height: 26px;
+}
+.intro_bar img{
+    display: block;
+    margin: 10px auto;
+}
+.intro_bar .lft_img{
+    float: left;
+    margin: 0 20px 0 0;
+}
+.pics_bar .col_bar_bd{
+    padding: 10px 0;
+}
+.pics_bar img{
+    float: left;
+    display: block;
+    margin: 10px;
+    width: 272px;
+    border-radius: 5px;
+}
+
+
+.footer {
+	clear: both;
+	background: #d943ab;
+	height: 50px;
+	line-height: 50px;
+	text-align: center;
+	color: #fff;
+}
+
+
+/* 我的日志页面 */
+.list_bar .pic_li {
+    float: none;
+    width: 100%;
+    margin: 10px 0;
+    border-bottom: 1px solid #ffbbce;
+}
+
+.list_bar .pic_a {
+    display: block;
+    height: 140px;
+    text-align: left;
+}
+
+.list_bar .pic_img {
+    float: left;
+    margin: 10px;
+    width: 170px;
+    height: 120px;
+    display: block;
+}
+
+.list_bar .pic_li .pic_title {
+    margin-top: 10px;
+    font-size: 20px;
+}
+
+.list_bar .pic_li .pic_txt {
+    position: relative;
+    float: left;
+    width: 655px;
+    height: auto;
+    margin: 10px 20px 10px 10px;
+    padding: 0;
+}
+
+.list_bar .pic_li .pic_txt .time {
+    position: absolute;
+    right: 20px;
+    top: 15px;
+    color: #777;
+}
+
+.list_bar .pic_a:hover .pic_txt {
+    color: #333;
+}
+
+/* 页码 */
+.col_page {
+    margin: 20px auto 30px;
+    text-align: center;
+    font-size: 14px;
+    line-height: 20px;
+    font-family: "Tahoma", "微软雅黑";
+}
+
+.col_page a,
+.col_page .pnBtn {
+    padding: 4px 11px 5px 10px;
+    margin: 0 3px 5px;
+    border: 1px solid #7b7b7b;
+    background: #fff;
+    display: inline-block;
+    color: #333;
+}
+
+.col_page span {
+    padding: 4px 11px 5px 10px;
+    margin: 0 3px 5px;
+    display: inline-block;
+}
+
+.col_page a:hover {
+    color: #d943ab;
+    text-decoration: none;
+    border: 1px solid #d943ab;
+}
+
+.col_page .current {
+    border: 1px solid #d943ab;
+    background: #d943ab;
+    color: #fff;
+}
+
+.col_page .disable,
+.col_page .disable:hover {
+    color: #dedede;
+    border: 1px solid #dedede;
+    cursor: default;
+}
+
+.col_page .ellipsis {
+    color: #333;
+}

@@ -1,0 +1,103 @@
+<!doctype html>
+<html>
+
+    <head>
+        <meta charset="utf-8">
+        <title>我的个人主页</title>
+        <link href="css/style.css" rel="stylesheet" type="text/css">
+        <link href="css/form.css" rel="stylesheet" type="text/css">
+    </head>
+
+    <body>
+        <div class="wrap">
+            <div class="banner">
+                <img src="images/banner.jpg" alt="" />
+            </div>
+            <div class="header">
+                <h1 class="logo">我的个人主页</h1>
+                <ul class="nav clearfix">
+                    <li class="nav_li">
+                        <a href="index.html">首页</a>
+                    </li>
+                    <li class="nav_li">
+                        <a href="album.html">我的相册</a>
+                    </li>
+                    <li class="nav_li">
+                        <a href="diary.html">我的日志</a>
+                    </li>
+                    <li class="nav_li">
+                        <a href="school.html">我的学校</a>
+                    </li>
+                    <li class="nav_li current">
+                        <a href="contact.html">留言板</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="container clearfix">
+                <div class="side_bar">
+                    <div class="side_bar_inner">
+                        <img class="my_photo" src="images/photo.jpg" alt="" />
+                        <h2 class="my_name">杨千月</h2>
+                        <div class="side_bar_txt">
+                            <p>性别：女</p>
+                            <p>出生日期：2003.5.22</p>
+                            <p>专业：新媒体专业 </p>
+                            <p>爱好：跑步、摄影、看书 </p>
+                            <p>邮箱：yangqianyue@qq.com</p>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="cont_bar">
+                    <div class="col_bar">
+                        <div class="col_bar_hd">
+                            <span class="title">留言板</span>
+                        </div>
+                        <div class="form_box">
+                            <div class="form_box_bd">
+                                <form action="/contact" method="post">  
+                                    <div class="form_line">
+                                        <div class="line_title">
+                                            <label for="username">昵 称</label>  
+                                        </div>
+                                        <div class="create_input_border">
+                                            <input name="username" type="text" value="" required> 
+                                        </div>
+                                    </div>
+                                    <div class="form_line">
+                                        <div class="line_title">
+                                            <label for="email">邮 箱</label>   
+                                        </div>
+                                        <div class="create_input_border">
+                                            <input type="email" name="email" required> 
+                                        </div> 
+                                    </div>
+                                    <div class="form_line has_textarea">
+                                        <div class="line_title">
+                                            <label for="info">留 言</label>
+                                        </div>
+                                        <div class="create_input_border">
+                                            <textarea name="info" 
+                                            placeholder="有什么想跟我说的" cols="30" rows="10"></textarea>
+                                        </div>  
+                                    </div>
+                                    
+                                    <div class="form_btn">
+                                        <input name="submit" type="button" id="button" value="提交"/>
+                                        <input name="cancle" type="button" id="button2" value="清空"/>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                   
+            </div>
+
+            <div class="footer">
+                <p>&copy;我的个人主页版权所有</p>
+            </div>
+        </div>
+    </body>
+</html>
